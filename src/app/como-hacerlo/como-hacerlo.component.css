@@ -1,0 +1,154 @@
+* {
+    color: black;
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 10px;
+    height: 700px;
+    gap: 80px;
+}
+
+.content {
+    display: flex;
+    
+}
+
+.content-img {
+    z-index: -9999;
+    position: relative;
+    width: 80%;
+}
+
+.imagen-text img {
+    border-radius: 20PX;
+    width: 90%;
+}
+
+.imagen-text {
+    border-radius: 100%;
+}
+
+.content-first {
+    display: flex;
+    padding-top: 10%;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-left: 6%;
+    padding-right: 6%;
+    gap: 50px;
+}
+
+
+.content-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.content-text h1 {
+    font-size: 5vh;
+}
+
+.content-text h2 {
+    font-size: 2.5vh;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+.text h1 {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+}
+
+.text p {
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+}
+
+span {
+    color: #042144;
+}
+
+.one {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: #00e4f1;
+}
+
+.one_intern {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: #002843;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 11;
+}
+
+.one_intern:hover {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: #002843;
+    margin-left: 8%;
+    margin-top: 8%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00e4f1;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+
+@media(max-width: 1110px) {
+    .principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        width: 10px;
+        height: 900px;
+    }
+
+    #content-img-2 {
+        display: none;
+    }
+
+    #content-img {
+        display: none;
+        width: 100%;
+    }
+}

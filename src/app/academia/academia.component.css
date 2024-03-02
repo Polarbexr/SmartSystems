@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+.heading{
+color: black;
+font-size: 60px;
+text-align: center;
+padding: 10px;
+font-family: "Montserrat", sans-serif;
+font-weight: 750;
+}
+.container-video{
+display: grid;
+grid-template-columns: 2fr 1fr;
+gap: 15px;
+align-items: flex-start;
+padding: 5px 5%;
+margin-bottom: 10%;
+}
+.present-video{
+    display: none;
+}
+.container-video .main-video{
+    background-color: #f1f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+}
+.container-video .main-video video{
+    width: 100%;
+    border-radius: 5px;
+}
+.container-video .main-video .title{
+    color: black;
+    font-size: 23px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.container-video .video-list{
+    background: #fff;
+    border-radius: 5px;
+    height: 520px;
+    overflow-y: scroll;
+}
+.container-video .video-list::-webkit-scrollbar{
+    width: 7px;
+}
+.container-video .video-list::-webkit-scrollbar-track{
+background: #ccc;
+border-radius: 50px;
+}
+.container-video .video-list::-webkit-scrollbar-thumb{
+background: #665;
+border-radius: 50px;
+}
+.container-video .video-list .vid video{
+    width: 50%;
+    border-radius: 5px;
+}
+.container-video .video-list .vid {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #f7f7f7;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0);
+    cursor: pointer;
+}
+.container-video .video-list .vid:hover{
+background: #eee;
+}
+.container-video .video-list .vid.active{
+background-color: #2980b9;
+}
+.container-video .video-list .vid.active .title{
+color: #fff;}
+.container-video.video-list .vid .title{
+    font-size: 17px;
+color: #333;}
+
+@media(max-width:991px){
+    .container-video{
+        grid-template-columns: 2fr 1fr;
+        padding: 10px;
+        }
+           .vid h3{
+            font-size: 16px;
+        }
+        .container-video{
+       
+            }
+        
+}
+@media(max-width:768px){
+    .container-video{
+        grid-template-columns:1fr;
+        padding: 10px;
+        }
+        .vid h3{
+            font-size: 15px;
+        }
+        .container-video{
+            
+            }
+      
+}
