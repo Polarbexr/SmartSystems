@@ -5,16 +5,17 @@
 }
 .content{
     display: flex;
+    flex-direction: column;
     background-color: #fff;
     justify-content: center;
     align-items: center;
+    background-color: var(--color-blue);
+
 }
 footer{
-    width: 99%;
-    height: 200px;
-    background-color: #002843;
-    border-radius: 25px;
-    margin-bottom: 10px;
+    width: 100%;
+    height: 250px;
+    background-color: var(--color-blue);
     display: flex;
     align-items: center;
     justify-content: space-between;

@@ -1,4 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --font-size:"Montserrat", sans-serif;
+    
+    --color-blue:#042144;
+
+    --color-blue-second:#00edef;
+
+    --color-black: #212529; 
+
+}
+
 *{
     margin: 0;
     padding: 0;

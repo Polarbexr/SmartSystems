@@ -1,21 +1,192 @@
-*{
-        padding-top: 15px;
-        
-}
 .boton{
   border-radius: 100%;      
       height: 15px;
       width: 15px;
-      background-color:  rgb(0, 0, 0);
+      border: 1px solid #00eeff;
+      background-color: #ffffff;
 }
 .span{
+        width: 200px;
         height: 100px;
-        color: black;
 }
+
+.text h5{
+font-size: 40px;
+font-weight: 800;
+margin-right: 20%;
+font-family: var(--font-size);
+}
+.text p{
+font-size: 20px;
+font-weight: 400;
+margin-bottom: 12%;
+margin-right: 20%;
+font-family: var(--font-size);
+}
+.text-two h5{
+opacity: 1;
+margin-right: 30%;
+font-size: 40px;
+font-weight: 800;
+z-index: 4;
+font-family: var(--font-size);
+
+}
+.text-two p{
+margin-right: 35%;
+font-size: 20px;
+font-weight: 400;
+padding-bottom: 10%;
+font-family: var(--font-size);
+}
+.text-three h5{
+  font-style: italic;
+font-size: 60px;
+font-weight: 800;
+padding-bottom: 15%;
+font-family: var(--font-size);
+
+}
+
+.span-carousel {
+        width: 50%;
+        height: 20%;
+}
+span{
+        color: #f1f1f1f1;
+        font-size: 23px;
+        font-weight: 650;
+}
+.carousel {
+        position: relative;
+      }
+      .text-two img {
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        bottom: 400px;
+        left: 0;
+        width: 100%;
+        object-fit: cover;
+        background-size: cover;
+        opacity: 0.3;
+      }
+
+      .text-four h5{
+        font-size: 40px;
+        font-weight: 750;
+        font-family: var(--font-size);
+
+
+      }
+      .text-four p{
+        font-size: 20px;
+        font-family: var(--font-size);
+        font-weight: 400;
+
+      }
+      .content{
+        position: relative;
+        padding-top:3.8%;
+      }
 
 @media(max-width:1110px){
         *{
                 padding-top: 0;
         
         }
+        .span{
+                width: 20px;
+        }
+        .carrosel{
+        height: 500px;
+        }
+        .carousel-inner img{
+                height: 500px;
+                object-fit: cover;
+                background-size: cover;
+        }
+        .text{
+                width: 100%;
+                text-align: center;
+        }
+        .text h5{
+                margin-right: 25%;
+                font-size: 30px;
+                font-weight: 600;
+                }
+                .text p{
+                margin-right: 25%;
+                font-size: 13px;
+                font-weight: 400;
+                margin-bottom: 20%;
+                }
+
+                .text-three {
+                        width: 100%;
+                        padding-right: 10%;
+                        }
+                .text-three span{
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: #ffff;
+                        }
+                        .text-three h5{
+                          font-size: 40px;
+                          font-weight: 800;
+                          margin-right:18%;
+                          font-family: var(--font-size);
+                          
+                          }
+                          .text-three p{
+                          font-size: 20px;
+                          font-weight: 400;
+                          padding-right: 0;
+                          padding-bottom: 10%;
+                          width: 80%;
+                          font-family: var(--font-size);
+                          
+                          }
+                        .text-four h5{
+                                font-size: 40px;
+                                font-weight: 750;
+                                margin-right: 25%;
+
+                                font-family: var(--font-size);
+                        
+                        
+                              }
+                              .text-four {
+                                width: 100%;
+                              }
+                              .text-four p{
+                                font-size: 12px;
+                                font-family: var(--font-size);
+                                font-weight: 400;
+                                margin-right: 25%;
+
+                                margin-bottom: 25%;
+                              }
+                              .text-four span{
+                                font-size: 16px;
+                                font-family: var(--font-size);
+                                font-weight: 400;
+                        
+                              }
+                              .text-two h5{
+                                font-size: 30px;
+                                margin-right: 0;
+
+                              }
+                              .text-two p{
+                                margin-right: 0;
+                                font-size: 15px;
+                                margin-bottom: 10%
+                              }
+             
+                              .text-two span{
+                                font-size: 18px;
+
+                              }
+             
 }

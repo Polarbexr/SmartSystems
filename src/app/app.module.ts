@@ -20,6 +20,7 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
 
 //inicio service
 import { CargarScriptsService } from './cargar-scripts.service';
+import { VistaAdasComponent } from './vista-adas/vista-adas.component';
 //fin service
 
 const appRoutes:Routes=[
@@ -27,7 +28,9 @@ const appRoutes:Routes=[
   {path:'',component:HomeComponent},
   {path:'cloud',component:CloudComponent},
   {path:'ayuda',component:AyudaComponent},
-  {path:'contacto',component:ContactoComponent}
+  {path:'contacto',component:ContactoComponent},
+  {path:'adas',component:VistaAdasComponent}
+
 ];
 
 @NgModule({
@@ -45,7 +48,8 @@ const appRoutes:Routes=[
     DescargasComponent,
     AcademiaComponent,
     ContactoComponent,
-    NosotrosComponent    
+    NosotrosComponent,
+    VistaAdasComponent    
   ],
   imports: [
     BrowserModule,

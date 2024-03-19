@@ -4,102 +4,201 @@
     box-sizing: border-box;
 }
 .content{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0% 2% 10% 2%;
+    width: 100%;
+    padding: 5% 5% 15% 5%;
 }
-.content-beneficios{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 33.33%;
-}
-.content-beneficios h1{
-    font-size: 30px;
-    font-weight: 750;
-    text-align: start;
+.text{
+    text-align: center;
     margin-bottom: 5%;
 }
-.content-beneficios p{
-    font-size: 15px;
+.text h2{
+    font-size: 22px;
+    color: var(--color-blue);
     font-weight: 450;
-    text-align: start;
+    color: rgb(22, 156, 209);
+    
+}
+.text h1{
+    font-size: 45px;
+    font-weight: 800;
+    text-shadow: 1px 1px 4px #ffffff;
+    font-family: var(--font-size);
 }
 
-#titulo{
-    text-align: center;
-    font-size: 45px;
-    font-weight: bold;
-    color: black;
-    font-family: "Montserrat", sans-serif;  
-    margin-bottom: 5%;
-    margin-top: 20%;
-}
-.content img{
-    width: 50%;
-}
-#img-up{
-    margin-bottom: 5%;
-}
-#img-down{
-    margin-top: 10%;
-}
-.img-backgraund{
+.beneficios-text {
     position: absolute;
-    z-index: -1;
-    margin-top: 10%;
-    object-fit: cover;
-    left: 0;
+    background-color: var(--color-blue);
+    margin: 30% 5% 0 5%;
+    padding: 15px 50px 15px 50px;
+    opacity: 0.8;
 }
-@media(max-width: 1110px){
-    .content{
-        display: flex;
-        flex-direction: column;
-    }
-    .content-beneficios{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        text-align: center;
-    }
-    #img-reverse{
-        display: flex;
-        text-align: justify;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin-bottom: 30px;
-    }
-    .content-beneficios h1{
-        width: 100%;
+
+.beneficios-text h1{
     font-size: 25px;
-    text-align: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    font-family: var(--font-size);
+    color: #f9f9f9;
+    margin-bottom: 5%;
+
+}
+.beneficios-text p{
+    font-size: 15px;
+    color: #f9f9f9;
+    font-family: var(--font-size);
+}
+.cards{
+    display: flex;
+    gap: 20px;
+}
+.card img{
+   width: 100%;
+   opacity: .9;
+}
+
+
+
+.card{
+    width: 100%;
+    background-color: #f9f9f9;
+}
+.text-camaras h2{
+    font-size: 25px;
+    color: var(--color-blue);
+    font-weight: 450;
+    color: rgb(22, 156, 209);
+    
+}
+.text-camaras h1{
+    font-size: 65px;
+    font-weight: 800;
+    text-shadow: 1px 1px 4px #ffffff;
+    font-family: var(--font-size);
+    
+}
+.text-camaras p{
+    font-size: 20px;
+    font-family: var(--font-size);
+    width: 80%;
+}
+.camaras{
+    background-color: #f9f9f9;
+    width: 100%;
+    padding: 2% 5% 2% 5%;
+
+}
+.camaras{
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+}
+    
+.camaras .text h2{
+    padding-top: 2%;
+}
+.contenido{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5%;
     width: 100%;
 }
-    #img-up{
+
+.contenido-cards{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 50px;
+}
+.card-contenido{
+    background-color: #ffffff;
+    text-align: center;
+    padding: 25px;
+}
+.card-contenido h1{
+ font-size: 25px;
+ font-weight: 600;
+}
+.card-contenido h2{
+ font-size: 20px;
+ font-weight: 200;
+}
+@media(max-width:1110px){
+    .contenido{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 5%;
+        width: 100%;
+    }
+    .card-contenido{
+        background-color: #ffffff;
+        text-align: center;
+        padding: 10px;
+    }
+    .contenido-cards{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 100%;
+        gap: 50px;
+    }
+    .card-contenido h1{
+        font-size: 25px;
+        font-weight: 600;
+        margin-top: 2%;
+       }
+       .card-contenido h2{
+        font-size: 20px;
+        font-weight: 200;
+        margin-top: 2%;
+       }
+       .text-camaras p{
+        font-size: 20px;
+        font-family: var(--font-size);
+        width: 100%;
         margin-bottom: 10%;
     }
-    #img-down{
+    .text-camaras h2{
+        text-align: center;
+        font-size: 25px;
+        color: var(--color-blue);
+        font-weight: 450;
+        color: rgb(22, 156, 209);
+        
+    }
+  
+    .cards{
+        display: flex;
+        flex-direction: column;
         margin-top: 10%;
     }
-    .img-backgraund{
-        position: absolute;
-        z-index: -1;
+    .card img:hover{
+        scale: none;
+       width: 100%;
+       opacity: 1;
+    }
+    .card{
         width: 100%;
-    }  
-    
-.img-backgraund{
-    display: none;
-    position: absolute;
-    z-index: -1;
-    width: 40%;
-    margin-top: 10%;
+        background-color: #f9f9f9;
+        margin-bottom: 80%;
+    }
+
 }
+@media( min-width:1110px){
+    .card img:hover{
+        scale: 1.02;
+        transition: all 2s;
+       width: 100%;
+       opacity: 1;
+    }
+    .card:hover > .beneficios-text {
+        position: absolute;
+        background-color: var(--color-blue);
+        transition: all 3s;
+        margin: 38% 5% 0 5%;
+        padding: 15px 50px 15px 50px;
+       
+
+      
+}
+    
 }

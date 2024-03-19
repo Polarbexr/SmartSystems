@@ -6,26 +6,37 @@
 }
 
 .heading{
-color: black;
+color: rgb(241, 241, 241);
 font-size: 60px;
 text-align: center;
-padding: 10px;
-font-family: "Montserrat", sans-serif;
+font-family: var(--font-size);
 font-weight: 750;
+background-color: #111111;
+}
+h3{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--font-size);  
 }
 .container-video{
 display: grid;
+width: 100%;
 grid-template-columns: 2fr 1fr;
 gap: 15px;
 align-items: flex-start;
-padding: 5px 5%;
-margin-bottom: 10%;
+padding: 10% 5%;
+background-image: url(../../assets/img/hexagon-background.jpg);
+background-size: cover;
+object-fit: cover;
+background-repeat: no-repeat;
+border-bottom: 1px solid #ffff;
+
 }
 .present-video{
     display: none;
 }
 .container-video .main-video{
-    background-color: #f1f1f1f1;
+    background-color: #0F0F0F;
     border-radius: 5px;
     padding: 10px;
 }
@@ -34,8 +45,10 @@ margin-bottom: 10%;
     border-radius: 5px;
 }
 .container-video .main-video .title{
-    color: black;
-    font-size: 23px;
+    color: #F1F1F1;
+    font-style: italic;
+    font-size: var(--font-size);
+    font-size: 40px;
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -44,7 +57,15 @@ margin-bottom: 10%;
     border-radius: 5px;
     height: 520px;
     overflow-y: scroll;
+    background-color: #0F0F0F;
 }
+
+.vid{
+opacity: 1;
+z-index: 1;
+}
+
+
 .container-video .video-list::-webkit-scrollbar{
     width: 7px;
 }
@@ -65,23 +86,24 @@ border-radius: 50px;
     align-items: center;
     gap: 15px;
     background: #f7f7f7;
-    border-radius: 5px;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid rgba(0,0,0);
+    padding: 40px;
+    border: 1px solid #B2CEDB;
     cursor: pointer;
 }
 .container-video .video-list .vid:hover{
 background: #eee;
 }
 .container-video .video-list .vid.active{
-background-color: #2980b9;
+background-color: var(--color-blue);
 }
 .container-video .video-list .vid.active .title{
-color: #fff;}
-.container-video.video-list .vid .title{
-    font-size: 17px;
-color: #333;}
+    font-weight: 300;
+    font-size: 20px;
+    color: #fff;
+}
+
+    
+
 
 @media(max-width:991px){
     .container-video{

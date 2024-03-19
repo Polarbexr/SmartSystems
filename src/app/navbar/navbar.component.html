@@ -1,21 +1,14 @@
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"><div class="content">
     <div class="content">
         <div class="contetn_intern">   
     <nav class="navbar" >
-        <img  loading="lazy" class="logo" src="../../assets/img/iconos webICO.ico" alt="">
+        <img  loading="lazy" class="logo" src="../../assets/img/logo2.webp" alt="">
         <label class="labe_hamburguesa" for="menu_hamburguesa">
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="50"
-                height="50"
-                fill="currentColor"
-                class="list_icon"
-                viewBox="0 0 16 16">
-                <path
-                    fill-rule="evenodd"
-                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-                />
-            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="#042144" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M4 6l16 0" />
+                <path d="M4 12l16 0" />
+                <path d="M4 18l16 0" />
+              </svg>
         </label>
         <input type="checkbox" name="" id="menu_hamburguesa">
 
@@ -31,12 +24,6 @@
             <li class="li_links one">
                 <a href="/" class="link">Inicio</a>
             </li>
-            <li class="li_links" (click)="toggleMenu()">
-                <a href="/" class="link">Soluciones</a>
-            </li>
-            <li class="li_links"  (click)="toggleMenu()">
-                <a href="/" class="link ">¿Como lo hacemos?</a>
-            </li>
             <li class="li_links">
                 <a href="#/cloud" class="link ">Smart Cloud</a>
             </li>
@@ -51,16 +38,18 @@
             </li>
         </ul>
     </nav>
-    <div class="nav_web fixed-top">
-        <a href=""><img loading="lazy" class="logo_web" src="../../assets/img/logo2.webp" alt=""></a>
+
+
+    <div class="nav_web">
+    <a class="logo_web" href=""><img  loading="lazy"  src="../../assets/img/logo2.webp" alt=""></a>
         <ul>
-            <li  id="target" ><a href="/">Inicio</a></li>
-            <li  id="target" ><a href="/">Soluciones</a></li>
-            <li  id="target" ><a href="/">¿Como lo hacemos?</a></li>
-            <li  id="target" ><a href="#/cloud">Smart Cloud</a></li>
+            <li  id="target" ><a routerLink="/">Inicio</a></li>
+            <!-- <li  id="target" ><a routerLink="/">Soluciones</a></li> -->
+            <!-- <li  id="target" ><a routerLink="/">¿Como lo hacemos?</a></li> -->
+            <li  id="target" ><a routerLink="/cloud">Smart Cloud</a></li>
             <li  id="target" ><a href="#/ayuda">Centro de ayuda</a></li>
-            <li  id="target" ><a href="#/contacto">Contacto</a></li>
-            <li  id="target" ><a href="#/nosotros">Nosotros</a></li>
+            <li  id="target" ><a routerLink="/contacto">Contacto</a></li>
+            <li  id="target" ><a routerLink="/nosotros">¿Como lo hacemos?</a></li>
      
         </ul>
      </div>
